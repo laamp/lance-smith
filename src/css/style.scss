@@ -5,9 +5,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .dark-mode {
     color: $dm-primary-text;
-    background-color: $dm-background;
+    background-color: $dm-background-highlight;
 
     h1 {
         color: $dm-bold-text;
