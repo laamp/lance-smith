@@ -1,7 +1,11 @@
+import '../css/vars';
 import '../css/style';
+import '../css/desktop';
+import '../css/mobile';
 
 window.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
+    const themeSwitcher = document.getElementById('theme-switcher');
 
     if (localStorage.getItem('color-mode') === 'dark') {
         body.className = 'dark-mode';
@@ -19,5 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    window.changecolor = switchColorMode;
+    themeSwitcher.addEventListener('click', switchColorMode);
 });

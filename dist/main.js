@@ -86,6 +86,28 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/desktop.scss":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/desktop.scss ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"@media only screen and (min-width: 600px) {\\n  body {\\n    height: 100vh;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center; }\\n  .wrapper {\\n    font-size: 100%;\\n    border: 1px solid #d8d8d8;\\n    border-radius: 5px;\\n    background-color: #fdf6e3;\\n    box-shadow: 0px 0px 5px 0px #aaaaaa;\\n    width: 90%;\\n    min-width: 600px;\\n    max-width: 1300px;\\n    height: 90%;\\n    min-height: 600px;\\n    max-height: 900px; } }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/desktop.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/mobile.scss":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/mobile.scss ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"@media only screen and (max-width: 600px) {\\n  .wrapper {\\n    font-size: 125%; } }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/mobile.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss":
 /*!*********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
@@ -93,7 +115,18 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".dark-mode {\\n  color: #839496;\\n  background-color: #002b36; }\\n  .dark-mode h1 {\\n    color: #93a1a1; }\\n\\n.light-mode {\\n  color: #657b83;\\n  background-color: #fdf6e3; }\\n  .light-mode h1 {\\n    color: #586e75; }\\n\\n.red-text {\\n  color: #dc322f; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  font-family: 'Open Sans', sans-serif; }\\n\\n.dark-mode {\\n  color: #839496;\\n  background-color: #002b36; }\\n  .dark-mode h1 {\\n    color: #93a1a1; }\\n\\n.light-mode {\\n  color: #657b83;\\n  background-color: #eee8d5; }\\n  .light-mode h1 {\\n    color: #586e75; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/vars.scss":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/vars.scss ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/vars.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -121,6 +154,28 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 
 /***/ }),
 
+/***/ "./src/css/desktop.scss":
+/*!******************************!*\
+  !*** ./src/css/desktop.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./desktop.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/desktop.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/css/desktop.scss?");
+
+/***/ }),
+
+/***/ "./src/css/mobile.scss":
+/*!*****************************!*\
+  !*** ./src/css/mobile.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./mobile.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/mobile.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/css/mobile.scss?");
+
+/***/ }),
+
 /***/ "./src/css/style.scss":
 /*!****************************!*\
   !*** ./src/css/style.scss ***!
@@ -132,6 +187,17 @@ eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/
 
 /***/ }),
 
+/***/ "./src/css/vars.scss":
+/*!***************************!*\
+  !*** ./src/css/vars.scss ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./vars.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/vars.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/css/vars.scss?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -140,7 +206,7 @@ eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style */ \"./src/css/style.scss\");\n/* harmony import */ var _css_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style__WEBPACK_IMPORTED_MODULE_0__);\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n    const body = document.querySelector('body');\n\n    if (localStorage.getItem('color-mode') === 'dark') {\n        body.className = 'dark-mode';\n    } else {\n        body.className = 'light-mode';\n    }\n\n    const switchColorMode = () => {\n        if (body.classList.contains('light-mode')) {\n            body.classList.replace('light-mode', 'dark-mode');\n            localStorage.setItem('color-mode', 'dark');\n        } else {\n            body.classList.replace('dark-mode', 'light-mode');\n            localStorage.setItem('color-mode', 'light');\n        }\n    };\n\n    window.changecolor = switchColorMode;\n});\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/vars */ \"./src/css/vars.scss\");\n/* harmony import */ var _css_vars__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_vars__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style */ \"./src/css/style.scss\");\n/* harmony import */ var _css_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_style__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _css_desktop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/desktop */ \"./src/css/desktop.scss\");\n/* harmony import */ var _css_desktop__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_desktop__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _css_mobile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/mobile */ \"./src/css/mobile.scss\");\n/* harmony import */ var _css_mobile__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_mobile__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', () => {\n    const body = document.querySelector('body');\n    const themeSwitcher = document.getElementById('theme-switcher');\n\n    if (localStorage.getItem('color-mode') === 'dark') {\n        body.className = 'dark-mode';\n    } else {\n        body.className = 'light-mode';\n    }\n\n    const switchColorMode = () => {\n        if (body.classList.contains('light-mode')) {\n            body.classList.replace('light-mode', 'dark-mode');\n            localStorage.setItem('color-mode', 'dark');\n        } else {\n            body.classList.replace('dark-mode', 'light-mode');\n            localStorage.setItem('color-mode', 'light');\n        }\n    };\n\n    themeSwitcher.addEventListener('click', switchColorMode);\n});\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

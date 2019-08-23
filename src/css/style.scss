@@ -1,23 +1,9 @@
-$dm-primary-text: #839496;
-$dm-secondary-text: #586e75;
-$dm-bold-text: #93a1a1;
-$dm-background: #002b36;
-$dm-background-highlight: #073642;
+@import './vars.scss';
 
-$lm-primary-text: #657b83;
-$lm-secondary-text: #93a1a1;
-$lm-bold-text: #586e75;
-$lm-background: #fdf6e3;
-$lm-background-highlight: #eee8d5;
-
-$yellow: #b58900;
-$orange: #cb4b16;
-$red: #dc322f;
-$magenta: #d33682;
-$violet: #6c71c4;
-$blue: #268bd2;
-$cyan: #2aa198;
-$green: #859900;
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 
 .dark-mode {
     color: $dm-primary-text;
@@ -30,13 +16,9 @@ $green: #859900;
 
 .light-mode {
     color: $lm-primary-text;
-    background-color: $lm-background;
+    background-color: $lm-background-highlight;
 
     h1 {
         color: $lm-bold-text;
     }
-}
-
-.red-text {
-    color: $red;
 }
