@@ -11,6 +11,15 @@ ul {
     list-style: none;
 }
 
+.content-section {
+    display: none;
+
+}
+
+.selected {
+    display: block;
+}
+
 .dark-mode {
     color: $dm-primary-text;
     background-color: $dm-background-highlight;
@@ -27,4 +36,12 @@ ul {
     h1 {
         color: $lm-bold-text;
     }
+}
+
+.debug-block {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: $blue;
+    border: 2px dashed $magenta;
 }

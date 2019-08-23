@@ -17,16 +17,25 @@
         <nav>
             <div id="menu-title">MENU</div>
             <ul>
-                <li>About</li>
+                <li class="selected-button">About</li>
                 <li>Projects</li>
                 <li>Misc</li>
             </ul>
             <div id="theme-switcher"><span>PLACEHOLDER</span></div>
         </nav>
         <section class="content">
-            <section class="about">About section</section>
-            <section class="projects">Projects section</section>
-            <section class="misc">Miscellaneous things</section>
+            <section class="content-section about selected" data-section="About">
+                About section
+                <div class="debug-block"></div>
+            </section>
+            <section class="content-section projects" data-section="Projects">
+                Projects section
+                <div class="debug-block"></div>
+            </section>
+            <section class="content-section misc" data-section="Misc">
+                Miscellaneous things
+                <div class="debug-block"></div>
+            </section>
         </section>
     </section>
 </body>

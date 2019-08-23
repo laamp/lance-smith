@@ -1,6 +1,10 @@
+// desktop specific styles
+
 @import './vars.scss';
 
 @media only screen and (min-width: 900px) {
+
+    // universal styles
     body {
         font-size: 135%;
         height: 100vh;
@@ -37,6 +41,7 @@
 
             li {
                 padding: 20px;
+                cursor: pointer;
             }
         }
 
@@ -51,7 +56,7 @@
         }
     }
 
-
+    // light mode specific styles
     .light-mode .wrapper {
         background-color: $lm-background;
         border: $lm-border;
@@ -73,11 +78,16 @@
             }
 
             #theme-switcher:after {
-                content: 'Solarized light 🌞️';
+                content: 'Light theme 🌞️';
             }
+        }
+
+        .content {
+            border-left: $lm-button-border;
         }
     }
 
+    // dark mode specific styles
     .dark-mode .wrapper {
         background-color: $dm-background;
         border: $dm-border;
@@ -99,8 +109,12 @@
             }
 
             #theme-switcher:after {
-                content: 'Solarized dark 🌛️'
+                content: 'Dark theme 🌛️'
             }
+        }
+
+        .content {
+            border-left: $dm-button-border;
         }
     }
 }
