@@ -97,6 +97,8 @@
             transform: scale(1.03);
             border-radius: 3px;
             box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.4);
+
+            border-bottom: 3px solid $cyan;
         }
     }
 
@@ -141,6 +143,8 @@
             transform: scale(1.03);
             border-radius: 3px;
             box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.4);
+
+            border-bottom: 3px solid $yellow;
         }
     }
 }

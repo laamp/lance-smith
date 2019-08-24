@@ -10,6 +10,31 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
 ul {
     margin: 0;
     padding: 0;
