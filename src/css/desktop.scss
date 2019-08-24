@@ -51,7 +51,7 @@
             cursor: pointer;
 
             &:active {
-                background-color: red;
+                transform: scale(1.05);
             }
         }
     }
@@ -71,9 +71,14 @@
 
             #theme-switcher {
                 border-top: $lm-button-border;
+                background-color: $lm-background;
 
                 span {
                     display: none;
+                }
+
+                &:active {
+                    box-shadow: $lm-shadow;
                 }
             }
 
@@ -84,6 +89,14 @@
 
         .content {
             border-left: $lm-button-border;
+        }
+
+        .selected-button {
+            background-color: $lm-background;
+            transform-origin: right;
+            transform: scale(1.03);
+            border-radius: 3px;
+            box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.4);
         }
     }
 
@@ -102,9 +115,14 @@
 
             #theme-switcher {
                 border-top: $dm-button-border;
+                background-color: $dm-background;
 
                 span {
                     display: none;
+                }
+
+                &:active {
+                    box-shadow: $dm-shadow;
                 }
             }
 
@@ -115,6 +133,14 @@
 
         .content {
             border-left: $dm-button-border;
+        }
+
+        .selected-button {
+            background-color: $dm-background;
+            transform-origin: right;
+            transform: scale(1.03);
+            border-radius: 3px;
+            box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.4);
         }
     }
 }

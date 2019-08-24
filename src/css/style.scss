@@ -1,5 +1,10 @@
 @import './vars.scss';
 
+* {
+    transition: $transition;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -12,12 +17,18 @@ ul {
 }
 
 .content-section {
-    display: none;
-
+    transition: $transition;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(20px);
+    height: 0;
 }
 
 .selected {
-    display: block;
+    transition: $transition;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .dark-mode {
