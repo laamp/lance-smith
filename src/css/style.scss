@@ -3,16 +3,18 @@
 * {
     transition: $transition;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 h1,
 h2,
-h3 {
+h3,
+p,
+a {
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,6 +39,10 @@ h3 {
 
 p {
     font-size: 1em;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -84,9 +90,4 @@ ul {
     height: 200px;
     background-color: $blue;
     border: 2px dashed $magenta;
-}
-
-#profile-picture {
-    height: 260px;
-    width: 260px;
 }

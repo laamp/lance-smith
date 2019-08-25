@@ -59,6 +59,30 @@
     .wrapper .content {
         width: 75%;
         padding: 10px;
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .wrapper a {
+        font-size: 90%;
+    }
+
+    #profile-picture {
+        height: 260px;
+        width: 260px;
+        margin: 0 10px 10px 0;
+        float: left;
+    }
+
+    .contact-list {
+        display: flex;
+        margin-bottom: 10px;
+
+        li {
+            margin-right: 10px;
+        }
     }
 
     // light mode specific styles
@@ -66,6 +90,16 @@
         background-color: $lm-background;
         border: $lm-border;
         box-shadow: $lm-shadow;
+
+        a {
+            color: $cyan;
+
+            &:hover,
+            &:active {
+                color: $yellow;
+                border-bottom: 3px solid $cyan;
+            }
+        }
 
         nav {
             background-color: $lm-background-highlight;
@@ -112,6 +146,16 @@
         background-color: $dm-background;
         border: $dm-border;
         box-shadow: $dm-shadow;
+
+        a {
+            color: $yellow;
+
+            &:hover,
+            &:active {
+                color: $red;
+                border-bottom: 3px solid $yellow;
+            }
+        }
 
         nav {
             background-color: $dm-background-highlight;
