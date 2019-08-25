@@ -56,6 +56,11 @@
         }
     }
 
+    .wrapper .content {
+        width: 75%;
+        padding: 10px;
+    }
+
     // light mode specific styles
     .light-mode .wrapper {
         background-color: $lm-background;

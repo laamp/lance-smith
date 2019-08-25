@@ -35,6 +35,10 @@ h3 {
     font-size: 1.17em;
 }
 
+p {
+    font-size: 1em;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -80,4 +84,9 @@ ul {
     height: 200px;
     background-color: $blue;
     border: 2px dashed $magenta;
+}
+
+#profile-picture {
+    height: 260px;
+    width: 260px;
 }
