@@ -89,6 +89,7 @@
 
     .contact-list {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 10px;
 
         li {
@@ -105,11 +106,24 @@
     .primary-skills {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .primary-skill p {
         text-align: center;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .skills ul {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 150px;
+        align-content: space-around;
     }
 
     .dev-icon {

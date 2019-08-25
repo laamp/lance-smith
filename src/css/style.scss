@@ -56,7 +56,8 @@ ul {
     visibility: hidden;
     opacity: 0;
     transform: translateX(20px);
-    height: 0;
+    height: 0px;
+    overflow: hidden;
 }
 
 .selected {
@@ -64,6 +65,7 @@ ul {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
+    overflow: visible;
 }
 
 .dark-mode {
