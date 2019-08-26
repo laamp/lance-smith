@@ -130,6 +130,51 @@
         margin: 0 auto;
     }
 
+    .project h2 {
+        margin-bottom: 10px;
+    }
+
+    .project-content {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+
+        .left-portion {
+            margin-right: 20px;
+            width: 40%;
+            align-self: center;
+
+            &:hover {
+                transform: translateY(-10px) scale(1.02);
+            }
+
+            a {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right-portion {
+            width: 60%;
+
+            ul {
+                list-style: disc;
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .projects:nth-child(odd) .project-content {
+        flex-direction: row-reverse;
+    }
+
+    .projects:nth-child(even) .project-content {
+        flex-direction: row;
+    }
+
     // light mode specific styles
     .light-mode .wrapper {
         background-color: $lm-background;
