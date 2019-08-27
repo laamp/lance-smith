@@ -109,6 +109,57 @@
         }
     }
 
+    .project {
+        margin: 10px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        a {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                padding: 5px;
+            }
+        }
+    }
+
+    .misc-project {
+        padding: 10px;
+
+        h3 {
+            padding-bottom: 10px;
+        }
+
+        a {
+            width: 100%;
+
+            margin: 10px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            padding-bottom: 15px;
+        }
+    }
+
     .light-mode {
         .h-divider {
             border-bottom: 3px solid $cyan;
