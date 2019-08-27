@@ -190,9 +190,15 @@
 
         .misc-link {
             width: 25%;
+            margin-bottom: 10px;
 
             img {
                 width: 100%;
+            }
+
+            &:hover {
+                transform-origin: bottom;
+                transform: translateY(-10px) scale(1.03);
             }
         }
 
