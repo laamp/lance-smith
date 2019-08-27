@@ -7,7 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
     const themeSwitcher = document.getElementById('theme-switcher');
     const sections = document.querySelectorAll('.content-section');
+    const nav = document.querySelector('nav ul');
     const buttons = document.querySelectorAll('nav ul li');
+    const menuButton = document.querySelector('#menu-title');
 
     if (localStorage.getItem('color-mode') === 'dark') {
         body.className = 'dark-mode';
@@ -38,8 +40,21 @@ window.addEventListener('DOMContentLoaded', () => {
         selectedSection.classList.add('selected');
     };
 
+    const menuButtonClicked = () => {
+        console.log('menu clicked');
+
+        if (nav.classList.contains('hidden')) {
+            nav.className = '';
+            themeSwitcher.className = '';
+        } else {
+            nav.className = 'hidden';
+            themeSwitcher.className = 'hidden';
+        }
+    };
+
     themeSwitcher.addEventListener('click', switchColorMode);
     buttons.forEach(btn => btn.addEventListener('click', switchButtonSelected));
+    menuButton.addEventListener('click', menuButtonClicked);
 
     // debugging below this line
 });

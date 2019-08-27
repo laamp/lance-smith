@@ -2,6 +2,158 @@
 
 @media only screen and (max-width: 900px) {
     .wrapper {
-        font-size: 125%;
+        font-size: 135%;
+
+        nav {
+            font-size: 135%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                order: 1;
+
+                li {
+                    padding: 5px 0;
+                    text-align: center;
+                }
+            }
+
+            #theme-switcher {
+                order: 2;
+                margin: 5px 0;
+            }
+
+            #menu-title {
+                order: 3;
+            }
+
+            .hidden {
+                transition: $transition;
+                transform: translateX(20px);
+                visibility: hidden;
+                height: 0px;
+                opacity: 0;
+            }
+        }
+
+        #profile-picture {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+        }
+    }
+
+    .h-divider {
+        width: 95%;
+        margin: 0 auto 10px auto;
+    }
+
+    .about {
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin: 0 10px 10px 10px;
+        }
+    }
+
+    .contact-list {
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            padding-right: 20px;
+
+            a {
+                color: $cyan;
+            }
+        }
+    }
+
+    .primary-skills {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        i {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 100px;
+        }
+    }
+
+    .primary-skill p {
+        text-align: center;
+    }
+
+    .skills {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                padding: 5px;
+            }
+        }
+    }
+
+    .light-mode {
+        .h-divider {
+            border-bottom: 3px solid $cyan;
+        }
+
+        #theme-switcher {
+            span {
+                display: none;
+            }
+
+            &:after {
+                content: 'Light theme 🌞️';
+            }
+        }
+
+        .contact-list li a {
+            color: $cyan;
+        }
+
+        #menu-title {
+            border-bottom: 2px solid $cyan;
+        }
+    }
+
+    .dark-mode {
+        .h-divider {
+            border-bottom: 3px solid $yellow;
+        }
+
+        #theme-switcher {
+            span {
+                display: none;
+            }
+
+            &:after {
+                content: 'Dark theme 🌛️';
+            }
+        }
+
+        .contact-list li a {
+            color: $yellow;
+        }
+
+        #menu-title {
+            border-bottom: 2px solid $yellow;
+        }
     }
 }
