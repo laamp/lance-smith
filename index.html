@@ -13,7 +13,7 @@
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
       rel="stylesheet"
     />
     <title>Lance Smith | Engineer</title>
@@ -22,123 +22,85 @@
   </head>
 
   <body>
-    <section class="wrapper">
+    <section class="main dark-mode">
+      <!-- navigation start -->
       <nav>
-        <div id="menu-title">MENU</div>
         <ul>
-          <li class="selected-button" title="Learn about me!">About</li>
-          <li title="Some of my larger projects">Projects</li>
-          <li title="Other fun things">Misc</li>
+          <li class="selected-nav" title="Some of my larger projects">
+            <h1>Projects</h1>
+          </li>
+          <li title="Other fun things">
+            <h1>Misc</h1>
+          </li>
+          <li title="Switch color modes">
+            <h1><span>???</span> mode</h1>
+          </li>
         </ul>
-        <div id="theme-switcher"><span>PLACEHOLDER</span></div>
       </nav>
-      <section class="content">
-        <section class="content-section about selected" data-section="About">
-          <h1>Lance Smith - Software Engineer</h1>
-          <ul class="contact-list">
+      <!-- navigation end -->
+      <!-- body start -->
+      <section class="body">
+        <!-- personal info start -->
+        <section class="info">
+          <div id="profile-pic">
+            <img src="./src/img/profile-pic.jpg" alt="Lance Smith" />
+          </div>
+          <p class="short-bio">
+            Lance Smith <br />
+            Software Engineer. <br />
+            PC Enthusiast. <br />
+            Gamer. <br />
+          </p>
+          <ul class="contact-links">
             <li>
-              <a href="mailto:lance.matthew.smith@gmail.com"
-                >lance.matthew.smith@gmail.com</a
-              >
+              <a href="mailto:lance.matthew.smith@gmail.com">
+                lance.matthew.smith@gmail.com
+              </a>
             </li>
             <li>
-              <a href="./src/docs/resume.pdf">Résumé</a>
+              <a href="./src/docs/resume.pdf">
+                Résumé
+              </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/lance-m-smith/">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/lance-m-smith/">
+                LinkedIn
+              </a>
             </li>
             <li>
-              <a href="https://angel.co/lance-m-smith">AngelList</a>
+              <a href="https://angel.co/lance-m-smith">
+                AngelList
+              </a>
             </li>
             <li>
-              <a href="https://github.com/laamp/">GitHub</a>
+              <a href="https://github.com/laamp/">
+                GitHub
+              </a>
             </li>
           </ul>
-          <div class="h-divider"></div>
-          <img
-            id="profile-picture"
-            src="./src/img/profile-pic.jpg"
-            alt="Pic of Lance Smith"
-            title="Lance Smith"
-          />
-          <p>
-            I'm a software engineer currently in the Bay Area. Being an avid
-            gamer early in life helped grow my interest in tech and ultimately
-            led me towards learning how to create them as an engineer. Once I
-            graduated from the Art Institute for engineering I was a game
-            designer for 5 years.
+          <p class="bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nihil
+            autem voluptas cumque fuga. Iste asperiores nihil reprehenderit ab
+            porro cumque repellat, adipisci velit, esse fugit expedita!
+            Assumenda, nobis blanditiis!
           </p>
-          <p>
-            I still had a lot of interest in engineering, so I decided to
-            refocus my efforts into that and graduated from an immersive full
-            stack coding bootcamp, App Academy. There I acquired skills to
-            become a full stack engineer using technology like Ruby on Rails,
-            Postgresql, Node.js, React.js, Redux, Git, HTML5, CSS3 / Sass, and
-            more.
+          <p class="skills">
+            <span>React.js</span> / <span>Redux</span> / <span>Node.js</span> /
+            <span>Ruby on Rails</span> / <span>Postgresql</span> /
+            <span>HTML5</span> / <span>Webpack</span> / <span>Sass</span> /
+            <span>MongoDB</span> / <span>Express.js</span> / <span>Git</span> /
+            <span>Game Design</span> / <span>Unity, C#</span> /
+            <span>PC Hardware</span> /
           </p>
-          <p>
-            I'm currently in the market for software engineering positions,
-            particularly pertaining to full stack web development.
-          </p>
-          <p>
-            Some of my personal hobbies include PC building and gaming. A few of
-            my all-time favorites are Castlevania: Symphony of the Night, Super
-            Metroid, and Breath of the Wild.
-          </p>
-          <div class="h-divider"></div>
-          <h2>Programming / Tech Skills</h2>
-          <section class="skills">
-            <div class="primary-skills">
-              <div class="primary-skill">
-                <div class="dev-icon">
-                  <i class="devicon-ruby-plain colored"></i>
-                </div>
-                <p>Ruby / Ruby on Rails</p>
-              </div>
-              <div class="primary-skill">
-                <div class="dev-icon">
-                  <i class="devicon-nodejs-plain colored"></i>
-                </div>
-                <p>Node.js / JavaScript</p>
-              </div>
-              <div class="primary-skill">
-                <div class="dev-icon">
-                  <i class="devicon-react-original colored"></i>
-                </div>
-                <p>React.js / Redux</p>
-              </div>
-            </div>
-            <ul>
-              <li>
-                Postresql <i class="devicon-postgresql-plain colored"></i>
-              </li>
-              <li>SQL</li>
-              <li>
-                Express.js <i class="devicon-express-original colored"></i>
-              </li>
-              <li>MVC Architecture</li>
-              <li>User Authentication</li>
-              <li>HTML5 <i class="devicon-html5-plain colored"></i></li>
-              <li>
-                CSS3 <i class="devicon-css3-plain colored"></i> / Sass
-                <i class="devicon-sass-original colored"></i>
-              </li>
-              <li>MongoDB <i class="devicon-mongodb-plain colored"></i></li>
-              <li>HTML Canvas</li>
-              <li>Webpack <i class="devicon-webpack-plain colored"></i></li>
-              <li>RESTful APIs</li>
-              <li>Git <i class="devicon-git-plain colored"></i></li>
-              <li>Unity3D / C# <i class="devicon-csharp-plain colored"></i></li>
-              <li>Game Design</li>
-              <li>Computer Hardware</li>
-            </ul>
-          </section>
         </section>
-        <section class="content-section projects" data-section="Projects">
-          <div class="project">
-            <h2>Conduit</h2>
-            <div class="project-content">
-              <div class="left-portion">
+        <!-- personal info end -->
+        <section class="content">
+          <!-- main projects start -->
+          <ul class="projects">
+            <!-- conduit start -->
+            <li>
+              <div class="project-left">
+                <h2>Conduit</h2>
                 <a href="https://conduit-candoit.herokuapp.com/#/">
                   <img
                     src="./src/img/conduit.png"
@@ -147,7 +109,7 @@
                   />
                 </a>
               </div>
-              <div class="right-portion">
+              <div class="project-right">
                 <p>
                   A productivity, task tracking app inspired by other apps such
                   as WunderList and Todoist. Built entirely with a JavaScript
@@ -155,30 +117,22 @@
                   marked as being completed.
                 </p>
                 <ul>
-                  <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
-                  <li>
-                    Express.js <i class="devicon-express-original colored"></i>
-                  </li>
-                  <li>MongoDB <i class="devicon-mongodb-plain colored"></i></li>
-                  <li>
-                    React
-                    <i class="devicon-react-original-wordmark colored"></i>
-                  </li>
-                  <li>Redux</li>
-                  <li>Webpack <i class="devicon-webpack-plain colored"></i></li>
-                  <li>BCrypt</li>
-                  <li>
-                    Heroku <i class="devicon-heroku-plain-wordmark colored"></i>
-                  </li>
+                  <li>Node.js <i class="devicon-nodejs-plain"></i></li>
+                  <li>Express.js <i class="devicon-express-original"></i></li>
+                  <li>MongoDB <i class="devicon-mongodb-plain"></i></li>
+                  <li>React <i class="devicon-react-original-wordmark"></i></li>
+                  <li>Redux <i class="devicon-redux-plain"></i></li>
+                  <li>Webpack <i class="devicon-webpack-plain"></i></li>
+                  <li>BCrypt <i class="devicon-bcrypt-plain"></i></li>
+                  <li>Heroku <i class="devicon-heroku-plain-wordmark"></i></li>
                 </ul>
               </div>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="project">
-            <h2>DeskLamp</h2>
-            <div class="project-content">
-              <div class="left-portion">
+            </li>
+            <!-- conduit end -->
+            <!-- desklamp start -->
+            <li>
+              <div class="project-left">
+                <h2>DeskLamp</h2>
                 <a href="http://desklamp.herokuapp.com/#/">
                   <img
                     src="./src/img/desklamp.png"
@@ -187,7 +141,7 @@
                   />
                 </a>
               </div>
-              <div class="right-portion">
+              <div class="project-right">
                 <p>
                   A clone of the website Basecamp. It is a single page full
                   stack web app designed to help individuals or groups track
@@ -196,32 +150,24 @@
                 </p>
                 <ul>
                   <li>
-                    Ruby on Rails
-                    <i class="devicon-rails-plain-wordmark colored"></i>
+                    Ruby on Rails <i class="devicon-rails-plain-wordmark"></i>
                   </li>
                   <li>
-                    Postgresql
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                    Postgresql <i class="devicon-postgresql-plain-wordmark"></i>
                   </li>
-                  <li>
-                    React
-                    <i class="devicon-react-original-wordmark colored"></i>
-                  </li>
-                  <li>Redux</li>
-                  <li>Webpack <i class="devicon-webpack-plain colored"></i></li>
-                  <li>BCrypt</li>
-                  <li>
-                    Heroku <i class="devicon-heroku-plain-wordmark colored"></i>
-                  </li>
+                  <li>React <i class="devicon-react-original-wordmark"></i></li>
+                  <li>Redux <i class="devicon-redux-plain"></i></li>
+                  <li>Webpack <i class="devicon-webpack-plain"></i></li>
+                  <li>BCrypt <i class="devicon-bcrypt-plain"></i></li>
+                  <li>Heroku <i class="devicon-heroku-plain-wordmark"></i></li>
                 </ul>
               </div>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="project">
-            <h2>TinyVania</h2>
-            <div class="project-content">
-              <div class="left-portion">
+            </li>
+            <!-- desklamp end -->
+            <!-- tinyvania start -->
+            <li>
+              <div class="project-left">
+                <h2>TinyVania</h2>
                 <a href="https://laamp.github.io/TinyVania/">
                   <img
                     src="./src/img/tinyvania.png"
@@ -230,7 +176,7 @@
                   />
                 </a>
               </div>
-              <div class="right-portion">
+              <div class="project-right">
                 <p>
                   A tribute to the Nintendo classic, Castlevania! This game is
                   built almost entirely with JavaScript and HTML5 Canvas
@@ -238,26 +184,19 @@
                   CSS for the styling around the game window.
                 </p>
                 <ul>
-                  <li>
-                    JavaScript <i class="devicon-javascript-plain colored"></i>
-                  </li>
-                  <li>
-                    HTML5 Canvas <i class="devicon-html5-plain colored"></i>
-                  </li>
-                  <li>CSS <i class="devicon-css3-plain colored"></i></li>
-                  <li>Webpack <i class="devicon-webpack-plain colored"></i></li>
-                  <li>
-                    GitHub Pages <i class="devicon-github-plain colored"></i>
-                  </li>
+                  <li>JavaScript <i class="devicon-javascript-plain"></i></li>
+                  <li>HTML5 Canvas <i class="devicon-html5-plain"></i></li>
+                  <li>CSS <i class="devicon-css3-plain"></i></li>
+                  <li>Webpack <i class="devicon-webpack-plain"></i></li>
+                  <li>GitHub Pages <i class="devicon-github-plain"></i></li>
                 </ul>
               </div>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="project">
-            <h2>Bit Clicker</h2>
-            <div class="project-content">
-              <div class="left-portion">
+            </li>
+            <!-- tinyvania end -->
+            <!-- bit clicker start -->
+            <li>
+              <div class="project-left">
+                <h2>Bit Clicker</h2>
                 <a href="https://bit-clicker.herokuapp.com/#/">
                   <img
                     src="https://raw.githubusercontent.com/laamp/clicker-test/master/screenshot.png"
@@ -266,36 +205,28 @@
                   />
                 </a>
               </div>
-              <div class="right-portion">
+              <div class="project-right">
                 <p>
                   A full stack clicker/idler game. Built entirely with a
                   JavaScript tech stack. The main goal is for players to
                   accumulate as much profit as possible!
                 </p>
                 <ul>
-                  <li>Node.js <i class="devicon-nodejs-plain colored"></i></li>
-                  <li>
-                    Express.js <i class="devicon-express-original colored"></i>
-                  </li>
-                  <li>MongoDB <i class="devicon-mongodb-plain colored"></i></li>
-                  <li>
-                    React
-                    <i class="devicon-react-original-wordmark colored"></i>
-                  </li>
-                  <li>Redux</li>
-                  <li>BCrypt</li>
-                  <li>
-                    Heroku <i class="devicon-heroku-plain-wordmark colored"></i>
-                  </li>
+                  <li>Node.js <i class="devicon-nodejs-plain"></i></li>
+                  <li>Express.js <i class="devicon-express-original"></i></li>
+                  <li>MongoDB <i class="devicon-mongodb-plain"></i></li>
+                  <li>React <i class="devicon-react-original-wordmark"></i></li>
+                  <li>Redux <i class="devicon-redux-plain"></i></li>
+                  <li>BCrypt <i class="devicon-bcrypt-plain"></i></li>
+                  <li>Heroku <i class="devicon-heroku-plain-wordmark"></i></li>
                 </ul>
               </div>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="project">
-            <h2>My Portfolio Site</h2>
-            <div class="project-content">
-              <div class="left-portion">
+            </li>
+            <!-- bit clicker end -->
+            <!-- portfolio site start -->
+            <li>
+              <div class="project-left">
+                <h2>My Portfolio Site</h2>
                 <a href="https://laamp.github.io/lance-smith/">
                   <img
                     src="./src/img/portfolio-site.png"
@@ -304,7 +235,7 @@
                   />
                 </a>
               </div>
-              <div class="right-portion">
+              <div class="project-right">
                 <p>
                   This is my personal portfolio site made from scratch and
                   hosted on GitHub Pages. It is made with HTML5, CSS / Sass,
@@ -313,205 +244,222 @@
                   local storage.
                 </p>
                 <ul>
-                  <li>HTML5 <i class="devicon-html5-plain colored"></i></li>
-                  <li>
-                    JavaScript <i class="devicon-javascript-plain colored"></i>
-                  </li>
-                  <li>
-                    Sass / CSS <i class="devicon-sass-original colored"></i>
-                  </li>
-                  <li>Webpack <i class="devicon-webpack-plain colored"></i></li>
-                  <li>
-                    GitHub Pages <i class="devicon-github-plain colored"></i>
-                  </li>
+                  <li>HTML5 <i class="devicon-html5-plain"></i></li>
+                  <li>JavaScript <i class="devicon-javascript-plain"></i></li>
+                  <li>Sass / CSS <i class="devicon-sass-original"></i></li>
+                  <li>Webpack <i class="devicon-webpack-plain"></i></li>
+                  <li>GitHub Pages <i class="devicon-github-plain"></i></li>
                   <li>Local Storage</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </section>
-        <section class="content-section misc" data-section="Misc">
-          <div class="misc-project">
-            <h3>Face Detection</h3>
-            <div class="misc-content">
-              <a class="misc-link" href="https://github.com/laamp/SelfieML">
-                <img
-                  src="./src/img/face-detection.png"
-                  alt="Face Detection"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Using face-api.js, your browser can capture an image once your
-                face is within range.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Conway's Game of Life</h3>
-            <div class="misc-content">
-              <a href="https://laamp.github.io/GameOfLife" class="misc-link">
-                <img
-                  src="./src/img/game-of-life.png"
-                  alt="Conway's Game of Life"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Using face-api.js, your browser can capture an image once your
-                face is within range.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Speech Synthesis</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="http://laamp.github.io/js30-speech-synthesis"
-              >
-                <img
-                  src="./src/img/speech-synthesis.png"
-                  alt="Speech Synthesis"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Using your browser's built-in speech synthesis, have it speak
-                any text you type in any language you select.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Speech Recognition</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-speech-recognition/"
-              >
-                <img
-                  src="./src/img/speech-detection.png"
-                  alt="Speech Recognition"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Using your browser's built-in speech recognition, have it write
-                anything you speak. Certain colors will trigger the background
-                color to change.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Webcam Fun</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-webcam-fun/"
-              >
-                <img
-                  src="./src/img/webcam-fun.png"
-                  alt="Webcam Fun"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                This will render whatever your webcam is viewing and provide you
-                with some different filters and options for a variety of
-                rendering effects.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>HTML5 Canvas Drawing</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-fun-with-html5-canvas/"
-              >
-                <img
-                  src="./src/img/html5-canvas.png"
-                  alt="HTML5 Canvas Drawing"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Use HTML Canvas to draw anything you want. It will cycle through
-                colors the more you draw!
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Type Ahead Searching</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-ajax-type-ahead/"
-              >
-                <img
-                  src="./src/img/type-ahead.png"
-                  alt="Type Ahead Search"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                A list of cities and their populations is fetched asynchronously
-                while the user can type in a location. If the browser has
-                received the data it will start predicting possible search
-                results.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Flex Panel Gallery</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-flex-panel-gallery/"
-              >
-                <img
-                  src="./src/img/flex-panel.png"
-                  alt="Flex Panel Gallery"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Using CSS Flexbox, this gallery shows off how easily you can
-                resize groups of items in relation to each other to make an
-                interesting layout.
-              </p>
-            </div>
-            <div class="h-divider"></div>
-          </div>
-          <div class="misc-project">
-            <h3>Drum Kit</h3>
-            <div class="misc-content">
-              <a
-                class="misc-link"
-                href="https://laamp.github.io/js30-drum-kit/"
-              >
-                <img
-                  src="./src/img/drum-kit.png"
-                  alt="Drum Kit"
-                  title="Try it out!"
-                />
-              </a>
-              <p class="misc-description">
-                Every button on the page is bound to a JavaScript event listener
-                that will respond to its key or click. Once fired, the event
-                listener will play the appropriate sound file.
-              </p>
-            </div>
-          </div>
+            </li>
+            <!-- portfolio site end -->
+          </ul>
+          <!-- main projects end -->
+          <!-- misc projects start -->
+          <ul class="misc-projects">
+            <li>
+              <div class="misc-left">
+                <h3>Face Detection</h3>
+                <a class="misc-link" href="https://github.com/laamp/SelfieML">
+                  <img
+                    src="./src/img/face-detection.png"
+                    alt="Face Detection"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Using face-api.js, your browser can capture an image once your
+                  face is within range.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Conway's Game of Life</h3>
+                <a href="https://laamp.github.io/GameOfLife" class="misc-link">
+                  <img
+                    src="./src/img/game-of-life.png"
+                    alt="Conway's Game of Life"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Using face-api.js, your browser can capture an image once your
+                  face is within range.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Speech Synthesis</h3>
+                <a
+                  class="misc-link"
+                  href="http://laamp.github.io/js30-speech-synthesis"
+                >
+                  <img
+                    src="./src/img/speech-synthesis.png"
+                    alt="Speech Synthesis"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Using your browser's built-in speech synthesis, have it speak
+                  any text you type in any language you select.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Speech Recognition</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-speech-recognition/"
+                >
+                  <img
+                    src="./src/img/speech-detection.png"
+                    alt="Speech Recognition"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Using your browser's built-in speech recognition, have it
+                  write anything you speak. Certain colors will trigger the
+                  background color to change.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Webcam Fun</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-webcam-fun/"
+                >
+                  <img
+                    src="./src/img/webcam-fun.png"
+                    alt="Webcam Fun"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  This will render whatever your webcam is viewing and provide
+                  you with some different filters and options for a variety of
+                  rendering effects.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>HTML5 Canvas Drawing</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-fun-with-html5-canvas/"
+                >
+                  <img
+                    src="./src/img/html5-canvas.png"
+                    alt="HTML5 Canvas Drawing"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Use HTML Canvas to draw anything you want. It will cycle
+                  through colors the more you draw!
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Type Ahead Searching</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-ajax-type-ahead/"
+                >
+                  <img
+                    src="./src/img/type-ahead.png"
+                    alt="Type Ahead Search"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  A list of cities and their populations is fetched
+                  asynchronously while the user can type in a location. If the
+                  browser has received the data it will start predicting
+                  possible search results.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Flex Panel Gallery</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-flex-panel-gallery/"
+                >
+                  <img
+                    src="./src/img/flex-panel.png"
+                    alt="Flex Panel Gallery"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Using CSS Flexbox, this gallery shows off how easily you can
+                  resize groups of items in relation to each other to make an
+                  interesting layout.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="misc-left">
+                <h3>Drum Kit</h3>
+                <a
+                  class="misc-link"
+                  href="https://laamp.github.io/js30-drum-kit/"
+                >
+                  <img
+                    src="./src/img/drum-kit.png"
+                    alt="Drum Kit"
+                    title="Try it out!"
+                  />
+                </a>
+              </div>
+              <div class="misc-right">
+                <p class="misc-description">
+                  Every button on the page is bound to a JavaScript event
+                  listener that will respond to its key or click. Once fired,
+                  the event listener will play the appropriate sound file.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- misc projects end -->
         </section>
       </section>
+      <!-- body end -->
     </section>
   </body>
 </html>

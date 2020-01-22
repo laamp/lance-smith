@@ -1,104 +1,76 @@
 @import './vars.scss';
 
-* {
-    transition: $transition;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-p,
-a {
+body,
+ul,
+p {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    vertical-align: baseline;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    list-style-type: none;
 }
 
 h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.17em;
-}
-
-p {
-    font-size: 1em;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    font-weight: normal;
+    font-size: 26px;
 }
 
-.content-section {
-    transition: $transition;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(20px);
-    height: 0px;
-    overflow: hidden;
+img {
+    width: 100%;
 }
 
-.selected {
-    transition: $transition;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0);
-    overflow: visible;
+nav {
+    padding: 18px 0 14px 0;
+    text-transform: uppercase;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 1080px;
+        margin: 0 auto;
+
+        li {
+            margin: 0 30px;
+            padding-bottom: 5px;
+        }
+
+        .selected-nav {
+            border-bottom: 3px solid $blue;
+        }
+    }
+}
+
+.body {
+    display: flex;
+    width: 1080px;
+    margin: 32px auto 0 auto;
+
+    .info {
+        width: 22%;
+        margin-right: 30px;
+    }
+
+    .content {
+        width: 78%;
+    }
 }
 
 .dark-mode {
-    color: $dm-primary-text;
-    background-color: $dm-background-highlight;
+    color: $grey;
+    background-color: $black;
 
-    h1 {
-        color: $dm-bold-text;
+    nav {
+        background-color: $black2;
     }
 }
 
 .light-mode {
-    color: $lm-primary-text;
-    background-color: $lm-background-highlight;
+    color: $black;
+    background-color: $white;
 
-    h1 {
-        color: $lm-bold-text;
+    nav {
+        background-color: $white2;
     }
-}
-
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.3);
 }
