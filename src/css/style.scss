@@ -1,20 +1,27 @@
-@import './vars.scss';
+@import "./vars.scss";
 
 body,
 ul,
+h1,
+h2,
 p {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
     list-style-type: none;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
     font-size: 26px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
 }
 
 img {
@@ -34,12 +41,22 @@ nav {
         li {
             margin: 0 30px;
             padding-bottom: 5px;
-        }
-
-        .selected-nav {
-            border-bottom: 3px solid $blue;
+            cursor: pointer;
         }
     }
+}
+
+#color-switcher {
+    width: 160px;
+    text-align: right;
+}
+
+#profile-pic {
+    transform: scaleX(-1);
+}
+
+.main {
+    padding-bottom: 80px;
 }
 
 .body {
@@ -47,13 +64,70 @@ nav {
     width: 1080px;
     margin: 32px auto 0 auto;
 
+    h1 {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
     .info {
         width: 22%;
-        margin-right: 30px;
+        margin-right: 90px;
+
+        .short-bio,
+        .skills {
+            font-size: small;
+            margin: 12px 0;
+        }
     }
 
     .content {
         width: 78%;
+
+        .projects>li {
+            display: flex;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+        }
+
+        .projects>li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-left {
+            width: 50%;
+            margin-right: 10px;
+        }
+
+        .project-right {
+            width: 50%;
+            padding-top: 43px;
+
+            ul {
+                margin-top: 10px;
+                font-size: small;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+
+        .misc-projects .project-left {
+            width: 40%;
+        }
+
+        .misc-projects .project-right {
+            height: 100px;
+        }
     }
 }
 
@@ -61,16 +135,55 @@ nav {
     color: $grey;
     background-color: $black;
 
+    a {
+        color: $yellow;
+    }
+
     nav {
         background-color: $black2;
+        border-bottom: $border-blend-dark;
+        box-shadow: $shadow-dark;
+
+        .selected-nav {
+            border-bottom: $highlighter-dark;
+        }
+    }
+
+    .short-bio,
+    .skills {
+        color: $weak-text-dark;
+    }
+
+    .projects>li {
+        border-bottom: 1px solid $blue;
     }
 }
 
 .light-mode {
+    $border-highlighter: 3px solid $red;
     color: $black;
     background-color: $white;
 
+    a {
+        color: $blue;
+    }
+
     nav {
         background-color: $white2;
+        border-bottom: $border-blend-light;
+        box-shadow: $shadow-light;
+
+        .selected-nav {
+            border-bottom: $highlighter-light;
+        }
+    }
+
+    .short-bio,
+    .skills {
+        color: $weak-text-light;
+    }
+
+    .projects>li {
+        border-bottom: 1px solid $blue;
     }
 }

@@ -26,13 +26,17 @@
       <!-- navigation start -->
       <nav>
         <ul>
-          <li class="selected-nav" title="Some of my larger projects">
+          <li
+            id="project-nav"
+            class="selected-nav"
+            title="Some of my larger projects"
+          >
             <h1>Projects</h1>
           </li>
-          <li title="Other fun things">
+          <li id="misc-nav" title="Other fun things">
             <h1>Misc</h1>
           </li>
-          <li title="Switch color modes">
+          <li id="color-switcher" title="Switch color modes">
             <h1><span>???</span> mode</h1>
           </li>
         </ul>
@@ -42,11 +46,11 @@
       <section class="body">
         <!-- personal info start -->
         <section class="info">
+          <h1>Lance Smith</h1>
           <div id="profile-pic">
             <img src="./src/img/profile-pic.jpg" alt="Lance Smith" />
           </div>
           <p class="short-bio">
-            Lance Smith <br />
             Software Engineer. <br />
             PC Enthusiast. <br />
             Gamer. <br />
@@ -78,19 +82,19 @@
               </a>
             </li>
           </ul>
-          <p class="bio">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nihil
-            autem voluptas cumque fuga. Iste asperiores nihil reprehenderit ab
-            porro cumque repellat, adipisci velit, esse fugit expedita!
-            Assumenda, nobis blanditiis!
-          </p>
           <p class="skills">
-            <span>React.js</span> / <span>Redux</span> / <span>Node.js</span> /
-            <span>Ruby on Rails</span> / <span>Postgresql</span> /
-            <span>HTML5</span> / <span>Webpack</span> / <span>Sass</span> /
-            <span>MongoDB</span> / <span>Express.js</span> / <span>Git</span> /
-            <span>Game Design</span> / <span>Unity, C#</span> /
-            <span>PC Hardware</span> /
+            <span>React.js</span> | <span>Redux</span> | <span>Node.js</span> |
+            <span>Ruby on Rails</span> | <span>Postgresql</span> |
+            <span>HTML5</span> | <span>Webpack</span> | <span>Sass</span> |
+            <span>MongoDB</span> | <span>Express.js</span> | <span>Git</span> |
+            <span>Game Design</span> | <span>Unity, C#</span> |
+            <span>PC Hardware</span>
+          </p>
+          <p class="bio">
+            Game designer turned engineer. My education has been in gameplay &
+            graphics coding as well as full stack web development. Currently in
+            the Bay Area looking for web dev roles. I'm also into PC hardware
+            and love playing a good Metroidvania.
           </p>
         </section>
         <!-- personal info end -->
@@ -257,10 +261,10 @@
           </ul>
           <!-- main projects end -->
           <!-- misc projects start -->
-          <ul class="misc-projects">
+          <ul class="projects misc-projects">
             <li>
-              <div class="misc-left">
-                <h3>Face Detection</h3>
+              <div class="project-left">
+                <h2>Face Detection</h2>
                 <a class="misc-link" href="https://github.com/laamp/SelfieML">
                   <img
                     src="./src/img/face-detection.png"
@@ -269,7 +273,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Using face-api.js, your browser can capture an image once your
                   face is within range.
@@ -278,8 +282,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Conway's Game of Life</h3>
+              <div class="project-left">
+                <h2>Conway's Game of Life</h2>
                 <a href="https://laamp.github.io/GameOfLife" class="misc-link">
                   <img
                     src="./src/img/game-of-life.png"
@@ -288,7 +292,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Using face-api.js, your browser can capture an image once your
                   face is within range.
@@ -297,8 +301,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Speech Synthesis</h3>
+              <div class="project-left">
+                <h2>Speech Synthesis</h2>
                 <a
                   class="misc-link"
                   href="http://laamp.github.io/js30-speech-synthesis"
@@ -310,7 +314,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Using your browser's built-in speech synthesis, have it speak
                   any text you type in any language you select.
@@ -319,8 +323,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Speech Recognition</h3>
+              <div class="project-left">
+                <h2>Speech Recognition</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-speech-recognition/"
@@ -332,7 +336,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Using your browser's built-in speech recognition, have it
                   write anything you speak. Certain colors will trigger the
@@ -342,8 +346,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Webcam Fun</h3>
+              <div class="project-left">
+                <h2>Webcam Fun</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-webcam-fun/"
@@ -355,7 +359,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   This will render whatever your webcam is viewing and provide
                   you with some different filters and options for a variety of
@@ -365,8 +369,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>HTML5 Canvas Drawing</h3>
+              <div class="project-left">
+                <h2>HTML5 Canvas Drawing</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-fun-with-html5-canvas/"
@@ -378,7 +382,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Use HTML Canvas to draw anything you want. It will cycle
                   through colors the more you draw!
@@ -387,8 +391,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Type Ahead Searching</h3>
+              <div class="project-left">
+                <h2>Type Ahead Searching</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-ajax-type-ahead/"
@@ -400,7 +404,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   A list of cities and their populations is fetched
                   asynchronously while the user can type in a location. If the
@@ -411,8 +415,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Flex Panel Gallery</h3>
+              <div class="project-left">
+                <h2>Flex Panel Gallery</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-flex-panel-gallery/"
@@ -424,7 +428,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Using CSS Flexbox, this gallery shows off how easily you can
                   resize groups of items in relation to each other to make an
@@ -434,8 +438,8 @@
             </li>
 
             <li>
-              <div class="misc-left">
-                <h3>Drum Kit</h3>
+              <div class="project-left">
+                <h2>Drum Kit</h2>
                 <a
                   class="misc-link"
                   href="https://laamp.github.io/js30-drum-kit/"
@@ -447,7 +451,7 @@
                   />
                 </a>
               </div>
-              <div class="misc-right">
+              <div class="project-right">
                 <p class="misc-description">
                   Every button on the page is bound to a JavaScript event
                   listener that will respond to its key or click. Once fired,
